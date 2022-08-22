@@ -1,5 +1,13 @@
 ## 데이터베이스 조작 프로젝트:video_camera:
-네이버 영화 페이지를 이용한 데이터베이스 조작 프로젝트 <br><br><br>
+네이버 영화 페이지를 이용한 데이터베이스 조작 프로젝트 <br> <br>
+
+### 사용 툴
+Database : Oracle <br>
+Tool : eXERD, DBeaver, Google Docs
+
+--------------------------
+
+<br>
 
 ### 1. 데이터 수집
 
@@ -10,16 +18,16 @@
 + 랭킹 50위 안에 속한 영화들의 정보를 수집한다.
 + 생성할 테이블과 데이터베이스에 저장할 데이터를 선별한다.
 
-<br>
+<br> <br>
  
 ### 2. ERD 작성
 
-
+<br><img src="https://user-images.githubusercontent.com/111429706/186000209-e1b2b04d-3f77-45b5-9304-0d3b74418d16.png" width="750" height="410"/>
 
 + 논리 ERD 작성 후, 물리 ERD 작성을 통해 최종적으로 관리할 데이터를 선택하고 제약사항을 추가한다.
 + 불필요한 중복을 최소화 하기 위해, 정규화 원칙에 따라 겹칠 가능성이 있는 테이블은 따로 추가해 관리하였다.
 
-<br>
+<br> <br>
  
 ### 3. 테이블 정의서 및 DDL 작성
 <br><img src="https://user-images.githubusercontent.com/111429706/185998976-6c38654c-66fa-49c0-9f04-469bea0a33b3.png" width="560" height="158"/>
@@ -38,7 +46,7 @@ create table tblMovie (
 );
 ```
 
-<br>
+<br> <br>
  
 ### 4. DML 작성
 
@@ -53,4 +61,9 @@ insert into tblMovie values(5, '장민호 드라마 최종회', '2022-01-24', 10
 insert into tblMovie values(6, '디지몬 어드벤처 라스트 에볼루션 : 인연', '2021-02-17', 114, 2, 3, 2);
 insert into tblMovie values(7, '베일리 어게인', '2018-11-22', 100, 1, 1, 2);
 ```
+
+<br> <br> <br>
+
+### 피드백
+
 
