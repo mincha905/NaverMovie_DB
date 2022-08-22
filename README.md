@@ -20,5 +20,21 @@
 <br>
  
 ### 3. 테이블 정의서 및 DDL 작성
+<br><img src="https://user-images.githubusercontent.com/111429706/185996776-66672996-f873-43b6-8d60-94e358c0a3eb.png" width="580" height="310"/>
+
 + 테이블 정의서를 작성해 물리 데이터 베이스에 이식할 준비를 한다.
+
+```
+create table tblMovie (
+    seq number primary key,
+    name varchar2(100) not null,
+    dates date not null,
+    time number not null,
+    gradeSeq number not null references tblGrade(seq),
+    likes number null,
+    summary varchar2(1000) not null
+);
+```
+
+
 
